@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card success">
+    <h2>Terima Kasih, {{ nama }}!</h2>
+    <p>Data Anda telah kami terima tanpa database (Simulasi):</p>
+    <ul>
+        <li><strong>Email:</strong> {{ email }}</li>
+        <li><strong>Isi Pesan:</strong> {{ pesan }}</li>
+    </ul>
+    <a href="{{ url_for('home') }}">Kembali ke Home</a>
+</div>
+{% endblock %}
